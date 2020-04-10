@@ -44,7 +44,7 @@ Function/Features features we plan to implement:
 •	The computer will generate its move using the random function.
 •	Data Structures to store the moves available and moves used.
 • 
-•  
+•   Form multiple-file program to implement different functions.
 •  
 •  
 •  
