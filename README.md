@@ -1,7 +1,7 @@
 # Project
 Team Members:
 Pallavi Goel - 3035663148
-Aastha Goel - 30356631
+Aastha Goel - 3035662470
 
 
 Objective of the game:
