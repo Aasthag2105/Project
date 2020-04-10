@@ -22,7 +22,7 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 2   +   +   +   +   +   +
 
 3   +   +   +   +   +   +
-
+       
 4   +   +   +   +   +   +
 
 5   +   +   +   +   +   +
@@ -43,9 +43,10 @@ The player with the most point wins the game.
 Function/Features features we plan to implement:
 •	The computer will generate its move using the random function.
 •	Data Structures to store the moves available and moves used.
-• 
-•   Form multiple-file program to implement different functions.
-•  
-•  
-•  
+•	Form multiple files to implement different functions. 
+•	Use of in-code documentation and proper indentation with naming styles for ease of understanding the code of the game. 
+•	Dynamic memory management to store the player’s move in order to recognise which player’s responsible for the next move.
+•	File input/output to store the points of the players after their moves.
+•	Each time a player makes a 1x1 box, its ID: U(User) or C(Computer) will appear in the center of that box.
+
 
