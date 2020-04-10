@@ -41,12 +41,11 @@ The player with the most point wins the game.
 
 
 Function/Features features we plan to implement:
-•	
-•	
-•	
-•
 •	The computer will generate its move using the random function.
 •	Data Structures to store the moves available and moves used.
 • 
+•  
+•  
+•  
 •  
 
