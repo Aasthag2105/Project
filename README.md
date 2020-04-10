@@ -14,11 +14,16 @@ It is a 2-player game
 •	Player 2 will be the computer.
 The players will be provided with a 6 by 6 grid, which will look something like this:
     A   B   C   D   E   F
-1   +   +   +   +   +   +
+1   +   +---+   +   +   +
+    |   |
 2   +   +   +   +   +   +
+
 3   +   +   +   +   +   +
-4   +   +   +   +   +   +
+
+4   +   +   +   +   +---+
+
 5   +   +   +   +   +   +
+
 6   +   +   +   +   +   +
 
 
