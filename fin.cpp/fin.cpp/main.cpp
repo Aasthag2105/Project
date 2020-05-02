@@ -62,61 +62,59 @@ void checkboxmade(vector<string> line, string mt){
     int i2=mt[3]-48;
     int i=i1+1;
     int k=i1-1;
+    //Conversion of integers into strings
     auto s1 = std::to_string(i1);
     auto s2 = std::to_string(i);
     auto sub = std::to_string(k);
-    string next= mt[0]+s1;
+    //Naming the adjacent dots to the line drawn
+    string next1= mt[0]+s1;
     string next2= mt[0]+s2;
     string next3=mt[2]+s1;
     string next4=mt[2]+s2;
     string nextsub1=mt[0]+sub;
     string nextsub2=mt[2]+sub;
+    //Conversion of adjacent letters to integers
     int fl1= mt[0]+1;
     int fl2= mt[2]-1;
     string nletter1, nletter2;
     nletter1= (char)fl1;
     nletter2= (char)fl2;
+    //Naming the adjacent dots to the line drawn
     string vnext= nletter1+s1;
     string vnext2= nletter1+s2;
     string vnextsub1= nletter2+s1;
     string vnextsub2= nletter2+s2;
-    //cout<<vnext2<<endl;
-    //cout<<vnextsub1<<endl;
-    //cout<< "final:  "<< next+next2<< endl;
-    //cout<< "NEXT: "<<next<< endl;
+    //Lower side: checking if box is made
     for (int j=1; j<6; j++){
         if (l1==j && l2==j+1)
-            if (std::find(line.begin(), line.end(), next+next2) != line.end())
+            if (std::find(line.begin(), line.end(), next1+next2) != line.end())
                 if (std::find(line.begin(), line.end(), next3+next4) != line.end())
                     if (std::find(line.begin(), line.end(), next2+next4) != line.end())
                         cout<<"LB"<<endl;}
+    //Upper side: checking if box is made
     for (int j=2;j<7;j++){
         if (l1==j && l2==j+1)
             if (std::find(line.begin(), line.end(), nextsub1+nextsub2) != line.end())
-                if (std::find(line.begin(), line.end(), nextsub1+next) != line.end())
+                if (std::find(line.begin(), line.end(), nextsub1+next1) != line.end())
                     if (std::find(line.begin(), line.end(), nextsub2+next3) != line.end())
                         cout<<"UB"<<endl;}
-
+    //Right side: checking if box is made
     for (int n=1; n<6;n++){
         if (l1==l2)
             if (i1==n && i2==n+1)
-                if (std::find(line.begin(), line.end(), next+vnext) != line.end())
+                if (std::find(line.begin(), line.end(), next1+vnext) != line.end())
                     if (std::find(line.begin(), line.end(), vnext+vnext2) != line.end())
-                        if (std::find(line.begin(), line.end(), next3+vnext2) != line.end())
+                        if (std::find(line.begin(), line.end(), next4+vnext2) != line.end())
                             cout<<"verticalbox right"<< endl;}
+    //Left side: checking if box is made
     for (int n=2; n<7; n++){
         if (l1==l2)
             if (i1==n && i2==n+1)
-                cout<<"b"<<endl;
-                if (std::find(line.begin(), line.end(), vnextsub1+next) != line.end())
-                    cout<<"bb"<<endl;
+                if (std::find(line.begin(), line.end(), vnextsub1+next1) != line.end())
                     if (std::find(line.begin(), line.end(), vnextsub1+vnextsub2) != line.end())
-                        cout<<"bbb"<<endl;
-                        if (std::find(line.begin(), line.end(), vnextsub2+next3) != line.end())
+                        if (std::find(line.begin(), line.end(), vnextsub2+next4) != line.end())
                             cout<< "verticalbox left"<< endl;}
-                
-            
-    //cout<<"l1: "<< l1<<"  i1: "<<i1<<"  l2: "<<l2<<"  i2: "<<i2<<endl;
+
 }
  
 void DrawBoard(char arr[28][28],int gridSize, int cellSize, string m1, string m2){
@@ -355,6 +353,7 @@ int main(){
         //string quote[2] ={m1,m2};
         //for (int i =0; i < 2; ++i){
         //str_stack.push(mt);
+        //Adding the moves of the user into the vector string
         line.push_back(mt);
         checkboxmade(line, mt);
         //str_stack.push(m2);
