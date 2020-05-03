@@ -27,7 +27,33 @@ using namespace std;
 Check box is complete
 To check whose turn
 For computer’s turn*/
-
+void printgrid(char arr[28][28]){
+    int total = 20, no=1;
+    char x;
+    cout<<"    A       B       C       D       E       F"<<endl;
+    cout<<endl;
+    for (int i=0; i<=total; i++){
+        if (i%4==0){
+            cout<<no<<"  ";
+            no=no+1;
+        }
+        else{
+            cout<<"   ";
+        }
+        for (int j=0; j<=total; j++){
+            if (i%4==0 && j%4==0){
+                x='*';
+            }
+            else{
+                x=' ';
+            }
+            cout<< " "<<x;
+            arr[i][j]=x;
+        }
+        cout<<endl;
+    }
+    cout<<endl;
+}
  
 int checkifvalid(string m){
     string Moves[]={"A1","A2","A3","A4","A5","A6","B1","B2","B3","B4","B5","B6","C1","C2","C3","C4","C5","C6","D1","D2","D3","D4","D5","D6","E1","E2","E3","E6","E4","E5","F1","F2","F3","F4","F5","F6"};
@@ -48,6 +74,7 @@ string compinput(string CombinedMoves[], int size){
  
 string checkboxmade(vector<string> line, string mt, string flag){
     //Convert the string into integers using ASCII values
+    flag="novalue";
     string boxmade="N";
     int l1=mt[0]-64;
     int i1=mt[1]-48;
@@ -108,6 +135,10 @@ string checkboxmade(vector<string> line, string mt, string flag){
                     if (std::find(line.begin(), line.end(), vnextsub1+vnextsub2) != line.end()){
                         if (std::find(line.begin(), line.end(), vnextsub2+next4) != line.end()){
                             flag=vnextsub1+next1;}}}}}}
+    if (flag=="novalue"){
+        boxmade="N";}
+    else{
+        boxmade="Y";}
     return boxmade, flag;
 
 }
@@ -178,44 +209,9 @@ int main(){
     string CombinedMoves[]={"A1A2","A2A3","A3A4","A4A5","A5A6","B1B2","B2B3","B3B4","B4B5","B5B6","C1C2","C2C3","C3C4","C4C5","C5C6","D1D2","D2D3","D3D4","D4D5","D5D6","E1E2","E2E3","E3E4","E4E5","E5E6","F1F2","F2F3","F3F4","F4F5","F5F6","A1B1","B1C1","C1D1","D1E1","E1F1","A2B2","B2C2","C2D2","D2E2","E2F2","A3B3","B3C3","C3D3","D3E3","E3F3","A4B4","B4C4","C4D4","D4E4","E4F4","A5B5","B5C5","C5D5","D5E5","E5F5","A6B6","B6C6","C6D6","D6E6","E6F6"};
     
     //print grid
-    int total = 20, no=1;
-    char x;
-    cout<<"    A       B       C       D       E       F"<<endl;
-    cout<<endl;
-    for (int i=0; i<=total; i++){
-        if (i%4==0){
-            cout<<no<<"  ";
-            no=no+1;
-        }
-        else{
-            cout<<"   ";
-        }
-        for (int j=0; j<=total; j++){
-            if (i%4==0 && j%4==0){
-                x='*';
-            }
-            else{
-                x=' ';
-            }
-            cout<< " "<<x;
-            arr[i][j]=x;
-        }
-        cout<<endl;
-    }
-    cout<<endl;
+    printgrid(arr);
  
-    
     while(tot!=8){
-        /*Check whose turn
-        If users turn call that function
-        Else call other function
-        Some func to check if box is made
-        If point of user increased center=u turn=turn+2
-         else center=c turn=turn+2
-         else if no increase cent=’ ‘ turn=turn+1
-        Send 2 point to to grid function and print grid(p1,p2,arr,cen)
-        Display points*/
-        
         //user's turn PART.1
         if (turn%2==0){
             cin>>m1;
@@ -271,13 +267,11 @@ int main(){
         line.push_back(mt);
         boxmade, flag= checkboxmade(line, mt, flag);
         
-       
-        
-        
         if (boxmade=="Y"){
             tot+=1;
             std::string p=flag[0]+std::to_string(flag[1]-48);
             p1=p;
+            cout<<p1<<endl;
             if (turn%2==0){
                 up+=1;
                 cen='U';
@@ -301,24 +295,11 @@ int main(){
         cout<<"USER'S Score:"<<up<<endl;
         cout<<"COMPUTER'S Score:"<<cp<<endl;
     }
-    cout<<flag;
-    //cout<<"H"<< endl;
-    //showstack(str_stack);
-    /*for(int i=0; i < line.size(); i++){
-          cout << line.at(i) << ' ';
-    }*/
-
-    /*if (up>cp){
+    if (up>cp){
         cout<<"USER wins by "<<up-cp<<" points!"<<endl;
     }
     else{
         cout<<"COMPUTER wins by "<<cp-up<<" points!"<<endl;
-    }*/
+    }
 }
 
-/*template<typename T> void pushElements(T& stackRef){
-    for (int i=0; i<4; i++){
-        stackRef.push(i);
-        cout<< stackRef.top()<<' ';
-}
-}*/
