@@ -163,7 +163,6 @@ void DrawBoard(char arr[28][28],int gridSize, int cellSize, string m1, string m2
                 else if ((i%4==0)&&((i/4)+1==m1[1]-48) && (j>c1 && j<c2)){
                     arr[i][j]='*';
                 }
-                
             }
         }
     }
@@ -181,9 +180,11 @@ void DrawBoard(char arr[28][28],int gridSize, int cellSize, string m1, string m2
         }
     }
     if (p1!="novalue"){
-    int a=(4*(p1[1]-49))+2;
-    int b=(4*(p1[0]-65))+2;
-    arr[a][b]=cen;
+        int a=(4*(p1[1]-49))+2;
+        int b=(4*(p1[0]-65))+2;
+        if (cen!=' '){
+            arr[a][b]=cen;
+        }
     }
     for ( i=0; i<=total; i++){
         if (i%4==0){
