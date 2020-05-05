@@ -63,9 +63,84 @@ int checkifvalid(string m){
 }
  
 //Function that RANDOMLY selects the computer’s move
-string compinput(string CombinedMoves[], int size){
+string compinput(string CombinedMoves[], int size, vector<string> line){
     //
-    int i=rand()%size;
+    int possiblesol=0, i;
+    string s;
+    int ctr=0;
+    vector<string> pseudoline= line;
+    for (int j=0; j<size; j++){
+        s= CombinedMoves[j];
+        pseudoline.push_back(s);
+        int l1=s[0]-64;
+        int i1=s[1]-48;
+        int i2=s[3]-48;
+        int l2=s[2]-64;
+        int i=i1+1;
+        int k=i1-1;
+        //Conversion of integers into strings
+        auto s1 = std::to_string(i1);
+        auto s2 = std::to_string(i);
+        auto sub = std::to_string(k);
+        //Naming the adjacent dots to the line drawn
+        string next1= s[0]+s1;
+        string next2= s[0]+s2;
+        string next3= s[2]+s1;
+        string next4= s[2]+s2;
+        string nextsub1= s[0]+sub;
+        string nextsub2= s[2]+sub;
+        //Conversion of adjacent letters to integers
+        int fl1= s[0]+1;
+        int fl2= s[2]-1;
+        string nletter1, nletter2;
+        nletter1= (char)fl1;
+        nletter2= (char)fl2;
+        //Naming the adjacent dots to the line drawn
+        string vnext= nletter1+s1;
+        string vnext2= nletter1+s2;
+        string vnextsub1= nletter2+s1;
+        string vnextsub2= nletter2+s2;
+        //Lower side: checking if box is made
+        for (int j=1; j<6; j++){
+            if (l1==j && l2==j+1){
+                if (std::find(pseudoline.begin(), pseudoline.end(), next1+next2) != pseudoline.end()){
+                    if (std::find(line.begin(), line.end(), next3+next4) != pseudoline.end()){
+                        if (std::find(pseudoline.begin(), pseudoline.end(), next2+next4) != pseudoline.end()){
+                            possiblesol=1;}}}}}
+        //Upper side: checking if box is made
+        for (int j=1;j<7;j++){
+            if (l1==j && l2==j+1){
+                if (std::find(pseudoline.begin(), pseudoline.end(), nextsub1+nextsub2) != pseudoline.end()){
+                    if (std::find(pseudoline.begin(), pseudoline.end(), nextsub1+next1) != pseudoline.end()){
+                        if (std::find(pseudoline.begin(), pseudoline.end(), nextsub2+next3) != pseudoline.end()){
+                            possiblesol=1;}}}}}
+        //Right side: checking if box is made
+        for (int n=1; n<6;n++){
+            if (l1==l2){
+                if (i1==n && i2==n+1){
+                    if (std::find(pseudoline.begin(), pseudoline.end(), next1+vnext) != pseudoline.end()){
+                        if (std::find(pseudoline.begin(), pseudoline.end(), vnext+vnext2) != pseudoline.end()){
+                            if (std::find(pseudoline.begin(), pseudoline.end(), next4+vnext2) != pseudoline.end()){
+                                possiblesol=1;}}}}}}
+        //Left side: checking if box is made
+        for (int n=1; n<7; n++){
+            if (l1==l2){
+                if (i1==n && i2==n+1){
+                    if (std::find(pseudoline.begin(), pseudoline.end(), vnextsub1+next1) != pseudoline.end()){
+                        if (std::find(pseudoline.begin(), pseudoline.end(), vnextsub1+vnextsub2) != pseudoline.end()){
+                            if (std::find(pseudoline.begin(), pseudoline.end(), vnextsub2+next4) != pseudoline.end()){
+                                possiblesol=1;}}}}}}
+        if (possiblesol==1){
+            break;
+        }
+        pseudoline.erase(std::remove(pseudoline.begin(), pseudoline.end(), s), pseudoline.end());
+        ctr++;
+    }
+    if (possiblesol==1){
+        i=ctr;
+    }
+    else{
+        i=rand()%size;}
     return CombinedMoves[i];
 }
  
@@ -397,7 +472,7 @@ p1=when a box is formed this point store the 2 upper points of the box*/
 /*if turn is not even it is the computer’s turn*/
         else if (turn%2!=0){
             cout<<"Computer's Move: ";
-            mt=compinput(CombinedMoves,size);
+            mt=compinput(CombinedMoves,size,line);
 /*function to find the computer's move. It will return 2 points combined as one string which will be separated into 2 points in the next 2 statements*/
             std::string a=mt[0]+std::to_string(mt[1]-48);//a=first point
             std::string b=mt[2]+std::to_string(mt[3]-48);//b=second point
