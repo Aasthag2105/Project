@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1C5E9B71245EC924004AAD3E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E9B70245EC924004AAD3E /* main.cpp */; };
+		1CDD5DE624631C550097CAAF /* DrawBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD5DE424631C550097CAAF /* DrawBoard.cpp */; };
+		1CDD5DEC246320F60097CAAF /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD5DEB246320F60097CAAF /* Makefile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		1C5E9B6D245EC924004AAD3E /* Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Game; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5E9B70245EC924004AAD3E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1CDD5DE424631C550097CAAF /* DrawBoard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DrawBoard.cpp; sourceTree = "<group>"; };
+		1CDD5DE724631CBE0097CAAF /* DrawBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawBoard.h; sourceTree = "<group>"; };
+		1CDD5DEB246320F60097CAAF /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				1C5E9B70245EC924004AAD3E /* main.cpp */,
+				1CDD5DE424631C550097CAAF /* DrawBoard.cpp */,
+				1CDD5DE724631CBE0097CAAF /* DrawBoard.h */,
+				1CDD5DEB246320F60097CAAF /* Makefile */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -119,6 +127,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDD5DE624631C550097CAAF /* DrawBoard.cpp in Sources */,
+				1CDD5DEC246320F60097CAAF /* Makefile in Sources */,
 				1C5E9B71245EC924004AAD3E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
