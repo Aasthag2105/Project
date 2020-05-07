@@ -434,7 +434,8 @@ break;}
         flag4= checkboxmadeleft(line, mt);
         
        
-/*if a box is formed the following part of the program will be executed.*/
+/*the following part of the code is to check the number of boxes that are made- atmost 2 boxes can be made with one line at a time
+and at which position they are made to the last printed line; left, right, top or bottom*/
         if(flag1!="novalue"){
             std::string p=flag1[0]+std::to_string(flag1[1]-48);
             p1=p;
@@ -488,36 +489,35 @@ break;}
         if (x!=0){
             tot+=1;//to keep track of the number of boxes made
             //std::string p=flag[0]+std::to_string(flag[1]-48);//to find the top left point of the box made
-            //p1=p;//the top left corner of the box formed
 /*depending on whose turn it was, user or computer a character will be passed ‘U’ or ‘C’ respectively
 Also, since a box is made, the player who made the box will get one more turn, so we are increasing turn by 2 instead of one*/
             if (turn%2==0){
-                if (x==2){
+                if (x==2){//in situations where 2 boxes are made with just one line the user will get 2 points and total will increase by 1 again.
                     up+=2;
                     tot+=1;
                 }
-                else{
+                else{//if only one box is made user gets one point
                     up+=1;
                 }
-                cen='U';
-                turn+=2;
+                cen='U';//since the user made a box letter U will be passed to the function DrawBoard to be printed in the centre of the box made
+                turn+=2;//since a box is made by the user, he/she will play again
             }
             else{
-                if (x==2){
+                if (x==2){//in situations where 2 boxes are made with just one line the computer will get 2 points and total will increase by 1 again.
                     cp+=2;
                     tot+=1;
                 }
-                else{
+                else{//if only one box is made computer gets one point
                     cp+=1;
                 }
-                cen='C';
-                turn+=2;
+                cen='C';//since the computer made a box letter C will be passed to the function DrawBoard to be printed in the centre of the box made
+                turn+=2;//since a box is made by the computer, it will play again
             }
         }
 /*if no box is formed then there will be a space instead of a letter and turn will be incremented by 1 only */
         else{
-            cen=' ';
-            turn+=1;
+            cen=' ';//if no box is made nothing will be printed in the centre of any box
+            turn+=1;//if no box is made it will be the other players turn
         }
         
         //print grid PART.3
@@ -532,13 +532,18 @@ Also, since a box is made, the player who made the box will get one more turn, s
     }
     cout<<endl;
     cout<<"GAME OVER"<<endl;
-/*once the board is fully filled, the winner will be displayed and by how many points they won*/
+/*once the board is fully filled or the game has ended, the winner will be displayed and by how many points they won*/
+/*once the game is over a file score.txt will be opened
+it stores 2 numbers, which are: the number of times the user has won the game and the number of times the computer has won respectively.
+each time a player wins the game, their value will be incremented by one and stored in the file score.txt*/
 	fstream f;
 	f.open("score.txt", ios::in|ios::out);
 
 	int ugw = 0, cgw = 0;
-
+//ugw=number of times the user has wom the game
+//cgw=number of times the computer has wom the game
 	if (f) {
+		//file reads the number of times players have won the games each
 		f >> ugw;
 		f >> cgw;
 	}
@@ -556,13 +561,14 @@ Also, since a box is made, the player who made the box will get one more turn, s
 else{
     cout<<"It is a TIE!"<<endl;
 }
-
+/*the number of times the players have won will be read from the file score.txt and will be displayed at the end of the program*/
 	cout << endl;
 	cout << "You have won a total of: " << ugw << " games!" << endl;
 	cout << "Computer has won a total of: " << cgw << " games!" << endl;
-
+//the new values of the number of times players have won are updated in the file score.txt
 	f.open("score.txt", ios::out|ios::trunc);
 	f << ugw << " " << cgw;
 	f.close();
+	cout<<endl;
 
 }
