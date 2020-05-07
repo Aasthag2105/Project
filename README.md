@@ -47,7 +47,7 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 However, the user can end the game in between by typing "EXIT" in its turn. In that situation the player with the most points at that given time wins.<br />
 
 <br />
-Functions/Features we plan to implement:<br />
+#Functions/Features we plan to implement:<br />
 <br />
 <ins>Generation of random game sets or events</ins><br />
 •	The computer will generate its move using the random function.<br />
@@ -73,5 +73,21 @@ Functions/Features we plan to implement:<br />
 <ins>In-code documentation</ins><br />
 •	Comments have been included to describe the usage of every function. Further comments have been included where explanation is required.  <br />
 <br />
+<br />
+__BUILD AND EXECUTE__<br />
 
+To use the system, simply follow the following steps:<br />
+
+1. Clone this repository using the following command on your command line interface
+git clone https://github.com/Aasthag2105/Project DotsAndBoxes <br />
+<br />
+2. Go into the directory of the project<br />
+cd DotsAndBoxes<br />
+<br />
+3. Build the executable through the make command. Our default executable generated is main<br />
+make Game<br />
+<br />
+4. Execute main<br />
+./Game<br />
+<br />
 
