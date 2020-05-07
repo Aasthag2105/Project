@@ -80,7 +80,6 @@ BUILD AND EXECUTE<br />
 
 To use the system, simply follow the following steps:<br/>
 1.  Clone this repository using the following command on your command line interface: git clone https://github.com/Aasthag2105/Project DotsAndBoxes <br />
-<br />
 2.  Go into the directory of the project<br />
 cd DotsAndBoxes<br />
 <br />
