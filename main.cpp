@@ -2,19 +2,8 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
-#include <queue>
-#include <unordered_map>
-#include <climits>
-#include <cmath>
-#include <bitset>
 #include <cstdio>
 #include <cstring>
-#include <stack>
-#include <list>
-#include <iomanip>
-#include <set>
-#include <map>
-#include <iterator>
 #include <stdlib.h>
 #include <algorithm>
 #include <time.h>
@@ -318,14 +307,11 @@ string checkboxmadeleft(vector<string> line, string mt){
  
  
 int main(){
-    cout<<"WELCOME TO DOTS AND BOXES"<<endl;
-    cout<<endl;
+
+    cout<<"/nWELCOME TO DOTS AND BOXES/n"<<endl;
     cout<<"Rules of the game:"<<endl;
-    cout<< "The user has to input the two points, each should start with a capital letter between A and F, followed by a number between 1 and 6. Both the points should be separated by a space. No other format would be recognized by the system. "<< endl;
-    cout<<"To stop the game in the middle, type 'EXIT' during User’s Move. "<<endl;
-    cout<<endl;
-    cout<<endl;
-    cout<<endl;
+    cout<< "The user has to input the two points./nEach point should start with a capital letter between A and F, followed by a number between 1 and 6./nBoth the points should be separated by a space./nNo other format would be recognized by the system. "<< endl;
+    cout<<"To stop the game in the middle, type 'EXIT' during User’s Move./n/n/n"<<endl;
     int tot=0,up=0,cp=0,turn=0,valid1, valid2,top=0,ct=0,x;
 /* tot= sum of user’s score and computer’s score
 up=to keep track of user’s points
