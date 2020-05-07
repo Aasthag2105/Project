@@ -47,7 +47,7 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 However, the user can end the game in between by typing "EXIT" in its turn. In that situation the player with the most points at that given time wins.<br />
 
 <br />
-__Functions/Features we plan to implement:__<br />
+Functions/Features we plan to implement:<br />
 <br />
 <ins>Generation of random game sets or events</ins><br />
 •	The computer will generate its move using the random function.<br />
@@ -67,10 +67,21 @@ __Functions/Features we plan to implement:__<br />
 •	Form multiple files to implement different functions. In our case, we have created the file DrawBoard.cpp which will print the updated board after each player's move.<br />
 <br />
 <ins>Proper indentation and naming styles</ins><br />
-•   Proper indentation with naming styles for ease of understanding the code of the game.
+•   Proper indentation with naming styles for ease of understanding the code of the game.<br />
 •   Variables, files, and functions have been named based on their utility. This ensures better code readability and understanding. <br />
 <br />
 <ins>In-code documentation</ins><br />
 •	Comments have been included to describe the usage of every function. Further comments have been included where explanation is required.  <br />
+<br />
+<br />
+**BUILD AND EXECUTE**<br />
+1. To use the system, simply follow the following steps:<br />
 
+2. Clone this repository using the following command on your command line interface: git clone https://github.com/Aasthag2105/Project <br />
+
+3. Go into the directory of the project: cd Game<br />
+
+4. Build the executable through the make command. Our default executable generated is main: make Game<br />
+
+5. Execute main: ./Game<br />
 
