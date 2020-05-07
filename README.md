@@ -20,20 +20,20 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 
     A   B   C   D   E   F    
 
-1 &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  *
+1 &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
     
-2  &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  *
+2  &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
 
-3  &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  *
+3  &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
        
-4  &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  *
+4  &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
 
-5  &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  *
+5  &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
 
-6  &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  *
+6  &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
 
 
-**How to play:** <br />
+**How to play:**  <br />
 1. Two players (user and computer) take turns adding a single horizontal or vertical line between two un-joined adjacent dots. <br />
 2. The user can do this by selecting 2 points.<br />
 3. There is a particular format of entering the points, each point should have a capital letter (A-F) followed by a number (1-6). Next the user must click "space" or "enter" button. After that the user must enter another point in the same manner to form a line.<br />
@@ -43,10 +43,11 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 7. The game is over when all the boxes (in this case 25) are taken.<br />
 8. The player with the most point wins the game.<br />
 <br />
-**However, the user can end the game in between by typing "EXIT" in its turn. In that situation the player with the most points at that given time wins.** <br />
+However, the user can end the game in between by typing "EXIT" in its turn. In that situation the player with the most points at that given time wins.<br />
 
 <br />
-**Function/Features we plan to implement:** <br />
+** Function/Features we plan to implement:**
+<br />
 <br />
 <ins>Generation of random game sets or events</ins><br />
 •	The computer will generate its move using the random function.<br />
