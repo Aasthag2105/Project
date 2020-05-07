@@ -1,11 +1,3 @@
-//
-//  DrawBoard.cpp
-//  Game
-//
-//  Created by Pallavi Goel on 06/05/2020.
-//  Copyright © 2020 Pallavi Goel. All rights reserved.
-//
-
 #include <iostream>
 #include "DrawBoard.h"
 using namespace std;
@@ -50,14 +42,14 @@ void DrawBoard(char arr[28][28],int gridSize, int cellSize, string m1, string m2
         int a=(4*(p1[1]-49))+2;
         int b=(4*(p1[0]-65))+2;
         if (cen!=' '){
-            arr[a][b]=cen;
+            arr[a][b]=cen; //center position of the box made will get the player's letter
         }
     }
-    if (p2!="empty"){
+    if (p2!="empty"){//if 2 boxes are made from one line the following part of the code will be executed to print the players letter in the middle
             int a=(4*(p2[1]-49))+2;
             int b=(4*(p2[0]-65))+2;
             if (cen!=' '){
-                arr[a][b]=cen;
+                arr[a][b]=cen;//center position of the second box made will also get the player's letter
             }
         }
  
