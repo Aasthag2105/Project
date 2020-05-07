@@ -54,7 +54,8 @@ Functions/Features we plan to implement:<br />
 <br />
 <ins>Data structures for storing game status</ins><br />
 •	Data Structures such as arrays are used to store the moves used by the computer and the user. <br />
-•   The values store in data structures help to join the two points in order to form a line.
+•   The values store in data structures help to join the two points in order to form a line. <br />
+•   The data structures are also used to print the grid and store the updated grid after each players turn.<br />
 <br />
 <ins>Dynamic memory management</ins><br />
 •	Dynamic memory management is used to user's new input as variable "ptr" and to store the player’s move in order to identify if the box is created by the user and to recognise which player is responsible for the next move in the form of vector.<br />
