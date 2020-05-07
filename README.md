@@ -47,13 +47,14 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 However, the user can end the game in between by typing "EXIT" in its turn. In that situation the player with the most points at that given time wins.<br />
 
 <br />
-#Functions/Features we plan to implement:<br />
+Functions/Features we plan to implement:<br />
 <br />
 <ins>Generation of random game sets or events</ins><br />
 •	The computer will generate its move using the random function.<br />
 <br />
 <ins>Data structures for storing game status</ins><br />
-•	Data Structures such as arrays to store the moves used by the computer and the user. <br />
+•	Data Structures such as arrays are used to store the moves used by the computer and the user. <br />
+•   The values store in data structures help to join the two points in order to form a line.
 <br />
 <ins>Dynamic memory management</ins><br />
 •	Dynamic memory management is used to user's new input as variable "ptr" and to store the player’s move in order to identify if the box is created by the user and to recognise which player is responsible for the next move in the form of vector.<br />
@@ -76,17 +77,17 @@ However, the user can end the game in between by typing "EXIT" in its turn. In t
 <br />
 BUILD AND EXECUTE<br />
 
-To use the system, simply follow the following steps:<br />
-1. Clone this repository using the following command on your command line interface<br />
+To use the system, simply follow the following steps:<br/>
+1.  Clone this repository using the following command on your command line interface<br />
 git clone https://github.com/Aasthag2105/Project DotsAndBoxes <br />
 <br />
-2. Go into the directory of the project<br />
+2.  Go into the directory of the project<br />
 cd DotsAndBoxes<br />
 <br />
-3. Build the executable through the make command. Our default executable generated is main<br />
+3.  Build the executable through the make command. Our default executable generated is main<br />
 make Game<br />
 <br />
-4. Execute main<br />
+4.  Execute main<br />
 ./Game<br />
 <br />
 
