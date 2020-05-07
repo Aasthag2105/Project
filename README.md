@@ -20,7 +20,7 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 
     A   B   C   D   E   F    
 
-1 &nbsp;  * &nbsp;&nbsp;&nbsp;  *  &nbsp;&nbsp;&nbsp; *  &nbsp;&nbsp; &nbsp;*  &nbsp;&nbsp;&nbsp; * &nbsp;&nbsp; &nbsp; *
+1 &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;  *  &nbsp;&nbsp;&nbsp; &nbsp;*  &nbsp;&nbsp;&nbsp; &nbsp;*  &nbsp;&nbsp;&nbsp;&nbsp; * &nbsp;&nbsp;&nbsp;&nbsp; *
     
 2   *   *   *   *   *   *
 
