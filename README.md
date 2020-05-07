@@ -8,7 +8,7 @@ Game Name:
 DOTS AND BOXES
 
 Objective of the game:
-To take more boxes than your opponent.
+To take more boxes than your opponent to win.
 
 
 Basics of the game:
