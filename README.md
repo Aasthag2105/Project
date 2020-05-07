@@ -4,7 +4,7 @@ Team Members:
 Pallavi Goel - 3035663148
 Aastha Goel - 3035662479
 
-Game Name: 
+Game Name: <br />
 DOTS AND BOXES
 
 Objective of the game:
@@ -50,7 +50,11 @@ The player with the most point wins the game.
 
 
 Function/Features we plan to implement:
+
+Generation of random game sets or events
 •	The computer will generate its move using the random function.
+
+
 •	Data Structures to store the moves available and moves used.
 •	Form multiple files to implement different functions. In our case, we have created the file DrawBoard.cpp which will print the updated board after each player's move.
 •	Use of in-code documentation and proper indentation with naming styles for ease of understanding the code of the game. 
