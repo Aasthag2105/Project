@@ -5,7 +5,7 @@ Pallavi Goel - 3035663148
 Aastha Goel - 3035662479
 
 Game Name: 
-Dots and Boxes
+DOTS AND BOXES
 
 Objective of the game:
 To take more boxes than your opponent.
