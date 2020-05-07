@@ -1,4 +1,4 @@
-#GROUP PROJECT <br />
+GROUP PROJECT <br />
 GROUP 127. <br />
 Team Members: <br />
 Pallavi Goel - 3035663148 <br />
@@ -20,7 +20,7 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 
     A   B   C   D   E   F    
 
-1   * &nbsp  * &nbsp  * &nbsp  *  &nbsp * &nbsp  *
+1   *   *   *   *   *   *
     
 2   *   *   *   *   *   *
 
@@ -33,32 +33,43 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 6   *   *   *   *   *   *
 
 
-How to play:
-Two players (user and computer) take turns adding a single horizontal or vertical line between two un-joined adjacent dots. 
+How to play: <br />
+Two players (user and computer) take turns adding a single horizontal or vertical line between two un-joined adjacent dots. <br />
+The user can do this by selecting 2 points.<br />
+There is a particular format of entering the points, each point should have a capital letter (A-F) followed by a number (1-6). Next the user must click "space" or "enter" button. After that the user must enter another point in the same manner to form a line.<br />
+The computer will randomly generate its moves during its turn.<br />
+A player who completes the fourth side of a 1×1 box first earns one point.<br />
+The players play in their turn, but whenever a player makes a box/earns a point they must play the next move again.<br />
+The game is over when all the boxes (in this case 25) are taken.<br />
+The player with the most point wins the game.<br />
+<br />
+However, the user can end the game in between by typing "EXIT" in its turn. In that situation the player with the most points at that given time wins.<br />
 
-•	The user can do this by selecting 2 points.
-There is a particular format of entering the points, each point should have a capital letter (A-F) followed by a number (1-6). Next the user must click "space" or "enter" button. After that the user must enter another point in the same manner to form a line.
+<br />
+Function/Features we plan to implement:<br />
+<br />
+Generation of random game sets or events<br />
+•	The computer will generate its move using the random function.<br />
+<br />
+Data structures for storing game status<br />
+•	Data Structures to store the moves used by the computer and the user.<br />
+<br />
+Dynamic memory management<br />
+•	Dynamic memory management is used to user's new input as variable "ptr" and to store the player’s move in order to identify if the box is created by the user and to recognise which player is responsible for the next move in the form of vector.<br />
+<br />
+File input/output (e.g., for loading/saving game status)<br />
+<br />
+•	File input/output to store the points of the players after their moves.<br />
+•   The number of times the players have won will be read from the file score.txt and will be displayed at the end of the program. <br />
+•   Once the game is over a file score.txt will be opened which stores 2 numbers : the number of times the user has won the game and the number of times the computer has won respectively. Each time a player wins the game, their value will be incremented by one and stored in the file score.txt. <br />
+<br />
+Program codes in multiple files<br />
+•	Form multiple files to implement different functions. In our case, we have created the file DrawBoard.cpp which will print the updated board after each player's move.<br />
+<br />
+Proper indentation and naming styles<br />
+•   Proper indentation with naming styles for ease of understanding the code of the game. <br />
+<br />
+In-code documentation<br />
+•	Comments have been included to describe the usage of every function. Further comments have been included where explanation is required.  <br />
 
-•	The computer will randomly generate its moves during its turn.
-A player who completes the fourth side of a 1×1 box first earns one point.
-The players play in their turn, but whenever a player makes a box/earns a point they must play the next move again.
-The game is over when all the boxes (in this case 25) are taken.
-The player with the most point wins the game.
-
-•	However, the user can end the game in between by typing "EXIT" in its turn. In that situation the player with the most points at that given time wins.
-
-
-Function/Features we plan to implement:
-
-Generation of random game sets or events
-•	The computer will generate its move using the random function.
-
-
-•	Data Structures to store the moves available and moves used.
-•	Form multiple files to implement different functions. In our case, we have created the file DrawBoard.cpp which will print the updated board after each player's move.
-•	Use of in-code documentation and proper indentation with naming styles for ease of understanding the code of the game. 
-•	Dynamic memory management is used to user's new input as variable "ptr" and to store the player’s move in order to identify if the box is created by the user and to recognise which player is responsible for the next move in the form of vector.
-•	File input/output to store the points of the players after their moves.
 •	Each time a player makes a 1x1 box, its ID: U(User) or C(Computer) will appear in the center of that box.
-
-
