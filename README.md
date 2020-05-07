@@ -79,14 +79,12 @@ FUNCTIONS AND FEATURES WE PLAN TO IMPLEMENT:<br />
 BUILD AND EXECUTE<br />
 
 To use the system, simply follow the following steps:<br/>
-1.  Clone this repository using the following command on your command line interface: git clone https://github.com/Aasthag2105/Project DotsAndBoxes <br />
-2.  Go into the directory of the project<br />
+1.  Clone this repository using the following command on your command line interface: <br />
+git clone https://github.com/Aasthag2105/Project DotsAndBoxes <br />
+2.  Go into the directory of the project:<br />
 cd DotsAndBoxes<br />
-<br />
-3.  Build the executable through the make command. Our default executable generated is main<br />
+3.  Build the executable through the make command. Our default executable generated is main:<br />
 make Game<br />
-<br />
-4.  Execute main<br />
+4.  Execute main:<br />
 ./Game<br />
-<br />
 
