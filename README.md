@@ -12,13 +12,13 @@ To take more boxes than your opponent to win. <br />
 <br />
 **Basics of the game:** <br />
 It is a 2-player game <br />
-•	Player 1 will be the user. <br />
-•	Player 2 will be the computer. <br />
+•	Player 1 will be the User. <br />
+•	Player 2 will be the Computer. <br />
 
 The players will be provided with a 6 by 6 grid, which will look something like this:
 
 
-    A    B   C    D   E   F    
+    A    B   C   D    E   F    
 
 1 &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
     
@@ -36,11 +36,11 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 **How to play:**  <br />
 1. Two players (user and computer) take turns adding a single horizontal or vertical line between two un-joined adjacent dots. <br />
 2. The user can do this by selecting 2 points.<br />
-3. There is a particular format of entering the points, each point should have a capital letter (A-F) followed by a number (1-6). Next the user must click "space" or "enter" button. After that the user must enter another point in the same manner to form a line.<br />
+3. There is a particular format of entering the points, each point should have a capital letter between A and F, followed by a number between 1 and 6. Next the user must click "space" or "enter" or "return" button. After that the user must enter another point in the same manner to form a line.<br />
 4. The computer will randomly generate its moves during its turn.<br />
 5. A player who completes the fourth side of a 1×1 box first earns one point.<br />
 6. The players play in their turn, but whenever a player makes a box/earns a point they must play the next move again.<br />
-7. Each time a player makes a 1x1 box, its ID: U(User) or C(Computer) will appear in the center of that box.
+7. Each time a player makes a 1x1 box, its ID: U for User and C for Computer will appear in the centre of that box.
 8. The game is over when all the boxes (in this case 25) are taken.<br />
 9. The player with the most point wins the game.<br />
 <br />
