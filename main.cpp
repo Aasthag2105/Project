@@ -80,9 +80,9 @@ string compinput(string CombinedMoves[], int size, vector<string> line){
         int i=i1+1;
         int k=i1-1;
         //Conversion of integers into strings
-        auto s1 = std::to_string(i1);
-        auto s2 = std::to_string(i);
-        auto sub = std::to_string(k);
+        string s1 = std::to_string(i1);
+        string s2 = std::to_string(i);
+        string sub = std::to_string(k);
         //Naming the adjacent dots to the line drawn
         string next1= s[0]+s1;
         string next2= s[0]+s2;
@@ -179,9 +179,9 @@ string checkboxmadelower(vector<string> line, string mt){
     int i=i1+1;
     int k=i1-1;
     //Conversion of integers into strings
-    auto s1 = std::to_string(i1);
-    auto s2 = std::to_string(i);
-    auto sub = std::to_string(k);
+    string s1 = std::to_string(i1);
+    string s2 = std::to_string(i);
+    string sub = std::to_string(k);
     //Naming the adjacent dots to the line drawn
     string next1= mt[0]+s1;
     string next2= mt[0]+s2;
@@ -208,9 +208,9 @@ string checkboxmadeupper(vector<string> line, string mt){
     int i=i1+1;
     int k=i1-1;
     //Conversion of integers into strings
-    auto s1 = std::to_string(i1);
-    auto s2 = std::to_string(i);
-    auto sub = std::to_string(k);
+    string s1 = std::to_string(i1);
+    string s2 = std::to_string(i);
+    string sub = std::to_string(k);
     //Naming the adjacent dots to the line drawn
     string next1= mt[0]+s1;
     string next2= mt[0]+s2;
@@ -238,9 +238,9 @@ string checkboxmaderight(vector<string> line, string mt){
     int i=i1+1;
     int k=i1-1;
     //Conversion of integers into strings
-    auto s1 = std::to_string(i1);
-    auto s2 = std::to_string(i);
-    auto sub = std::to_string(k);
+    string s1 = std::to_string(i1);
+    string s2 = std::to_string(i);
+    string sub = std::to_string(k);
     //Naming the adjacent dots to the line drawn
     string next1= mt[0]+s1;
     string next2= mt[0]+s2;
@@ -280,9 +280,9 @@ string checkboxmadeleft(vector<string> line, string mt){
     int i=i1+1;
     int k=i1-1;
     //Conversion of integers into strings
-    auto s1 = std::to_string(i1);
-    auto s2 = std::to_string(i);
-    auto sub = std::to_string(k);
+    string s1 = std::to_string(i1);
+    string s2 = std::to_string(i);
+    string sub = std::to_string(k);
     //Naming the adjacent dots to the line drawn
     string next1= mt[0]+s1;
     string next2= mt[0]+s2;
