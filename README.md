@@ -73,15 +73,5 @@ Functions/Features we plan to implement:<br />
 <ins>In-code documentation</ins><br />
 •	Comments have been included to describe the usage of every function. Further comments have been included where explanation is required.  <br />
 <br />
-<br />
-**BUILD AND EXECUTE**<br />
-1. To use the system, simply follow the following steps:<br />
 
-2. Clone this repository using the following command on your command line interface: git clone https://github.com/Aasthag2105/Project <br />
-
-3. Go into the directory of the project: cd Game<br />
-
-4. Build the executable through the make command. Our default executable generated is main: make Game<br />
-
-5. Execute main: ./Game<br />
 
