@@ -386,10 +386,12 @@ void DrawBoard(char arr[28][28],int gridSize, int cellSize, string m1, string m2
  
  
 int main(){
-cout<<"WELCOME TO DOTS AND BOXES"<<endl;
-cout<<endl;
-cout<<"To stop the game in the middle type EXIT for User’s Move"<<endl;
-cout<<endl;
+    cout<<"WELCOME TO DOTS AND BOXES"<<endl;
+    cout<<endl;
+    cout<<"Rules of the game:"<<endl;
+    cout<< "The user has to input the two points, each should start with a capital letter between A and F, followed by a number between 1 and 6. Both the points should be separated by a space. No other format would be recognized by the system. "<< endl;
+    cout<<"To stop the game in the middle, type 'EXIT' during User’s Move. "<<endl;
+    cout<<endl;
     int tot=0,up=0,cp=0,turn=0,valid1, valid2,top=0,ct=0,x;
 /* tot= sum of user’s score and computer’s score
 up=to keep track of user’s points
