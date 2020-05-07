@@ -308,10 +308,10 @@ string checkboxmadeleft(vector<string> line, string mt){
  
 int main(){
 
-    cout<<"/nWELCOME TO DOTS AND BOXES/n"<<endl;
+    cout<<"\nWELCOME TO DOTS AND BOXES\n"<<endl;
     cout<<"Rules of the game:"<<endl;
-    cout<< "The user has to input the two points./nEach point should start with a capital letter between A and F, followed by a number between 1 and 6./nBoth the points should be separated by a space./nNo other format would be recognized by the system. "<< endl;
-    cout<<"To stop the game in the middle, type 'EXIT' during User’s Move./n/n/n"<<endl;
+    cout<< "The user has to input the two points.\nEach point should start with a capital letter between A and F, followed by a number between 1 and 6.\nBoth the points should be separated by a space.\nNo other format would be recognized by the system. "<< endl;
+    cout<<"To stop the game in the middle, type 'EXIT' during User’s Move.\n\n\n"<<endl;
     int tot=0,up=0,cp=0,turn=0,valid1, valid2,top=0,ct=0,x;
 /* tot= sum of user’s score and computer’s score
 up=to keep track of user’s points
@@ -319,7 +319,8 @@ cp=to keep track of computer’s points
 turn= to keep track of whose turn it is to make a move
 valid1, valid2 = to check if the user’s moves are valid
 top= to keep track of the size of array IsPlayed
-ct= to keep track of number of moves played by the user, right and wrong */
+ct= to keep track of number of moves played by the user, right and wrong 
+x= to check the number of boxes made in each turn*/
     char cen, arr[28][28];
 /*cen= to pass the winner’s letter to print in the middle of the box when needed
 arr=stores the characters of the grid*/
@@ -342,7 +343,7 @@ p1=when a box is formed this point store the 2 upper points of the box*/
     //print grid
     printgrid(arr);
     cout<<endl;
- //----------------------------------------------------------------------------
+	
     while(tot!=25){
         p2="empty";
         if (turn==0){
