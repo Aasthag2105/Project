@@ -1,20 +1,20 @@
-#GROUP PROJECT
-GROUP 127. 
-Team Members:
-Pallavi Goel - 3035663148
-Aastha Goel - 3035662479
+#GROUP PROJECT <br />
+GROUP 127. <br />
+Team Members: <br />
+Pallavi Goel - 3035663148 <br />
+Aastha Goel - 3035662479 <br />
 
 Game Name: <br />
-DOTS AND BOXES
-
-Objective of the game:
-To take more boxes than your opponent to win.
-
-
-Basics of the game:
-It is a 2-player game
-•	Player 1 will be the user.
-•	Player 2 will be the computer.
+DOTS AND BOXES <br />
+<br />
+Objective of the game: <br />
+To take more boxes than your opponent to win. <br />
+<br />
+<br />
+Basics of the game: <br />
+It is a 2-player game <br />
+•	Player 1 will be the user. <br />
+•	Player 2 will be the computer. <br />
 
 The players will be provided with a 6 by 6 grid, which will look something like this:
 
