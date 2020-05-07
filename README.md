@@ -53,7 +53,7 @@ However, the user can end the game in between by typing "EXIT" in its turn. In t
 •	The computer will generate its move using the random function.<br />
 <br />
 <ins>Data structures for storing game status</ins><br />
-•	Data Structures to store the moves used by the computer and the user.<br />
+•	Data Structures such as arrays to store the moves used by the computer and the user. <br />
 <br />
 <ins>Dynamic memory management</ins><br />
 •	Dynamic memory management is used to user's new input as variable "ptr" and to store the player’s move in order to identify if the box is created by the user and to recognise which player is responsible for the next move in the form of vector.<br />
@@ -74,11 +74,10 @@ However, the user can end the game in between by typing "EXIT" in its turn. In t
 •	Comments have been included to describe the usage of every function. Further comments have been included where explanation is required.  <br />
 <br />
 <br />
-__BUILD AND EXECUTE__<br />
+BUILD AND EXECUTE<br />
 
 To use the system, simply follow the following steps:<br />
-
-1. Clone this repository using the following command on your command line interface
+1. Clone this repository using the following command on your command line interface<br />
 git clone https://github.com/Aasthag2105/Project DotsAndBoxes <br />
 <br />
 2. Go into the directory of the project<br />
