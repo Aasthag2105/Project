@@ -19,7 +19,6 @@
 #include <algorithm>
 #include <time.h>
 #include "DrawBoard.h"
-
  
 using namespace std;
  
@@ -315,6 +314,8 @@ string checkboxmadeleft(vector<string> line, string mt){
 }
  
  
+
+ 
  
 int main(){
     cout<<"WELCOME TO DOTS AND BOXES"<<endl;
@@ -545,13 +546,36 @@ Also, since a box is made, the player who made the box will get one more turn, s
     cout<<endl;
     cout<<"GAME OVER"<<endl;
 /*once the board is fully filled, the winner will be displayed and by how many points they won*/
+	fstream f;
+	f.open("score.txt", ios::in|ios::out);
+
+	int ugw = 0, cgw = 0;
+
+	if (f) {
+		f >> ugw;
+		f >> cgw;
+	}
+
+	f.close();
+
     if (up>cp){
         cout<<"USER wins by "<<up-cp<<" points!"<<endl;
+		ugw++;
     }
     else if (cp>up){
         cout<<"COMPUTER wins by "<<cp-up<<" points!"<<endl;
+		cgw++;
     }
 else{
     cout<<"It is a TIE!"<<endl;
 }
+
+	cout << endl;
+	cout << "You have won a total of: " << ugw << " games!" << endl;
+	cout << "Computer has won a total of: " << cgw << " games!" << endl;
+
+	f.open("score.txt", ios::out|ios::trunc);
+	f << ugw << " " << cgw;
+	f.close();
+
 }
