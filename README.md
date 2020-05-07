@@ -18,7 +18,7 @@ It is a 2-player game <br />
 The players will be provided with a 6 by 6 grid, which will look something like this:
 
 
-    A   B   C   D   E   F    
+    A    B    C    D    E    F    
 
 1 &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
     
@@ -47,7 +47,7 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 However, the user can end the game in between by typing "EXIT" in its turn. In that situation the player with the most points at that given time wins.<br />
 
 <br />
-Functions/Features we plan to implement:<br />
+FUNCTIONS AND FEATURES WE PLAN TO IMPLEMENT:<br />
 <br />
 <ins>Generation of random game sets or events</ins><br />
 •	The computer will generate its move using the random function.<br />
@@ -79,8 +79,7 @@ Functions/Features we plan to implement:<br />
 BUILD AND EXECUTE<br />
 
 To use the system, simply follow the following steps:<br/>
-1.  Clone this repository using the following command on your command line interface<br />
-git clone https://github.com/Aasthag2105/Project DotsAndBoxes <br />
+1.  Clone this repository using the following command on your command line interface: git clone https://github.com/Aasthag2105/Project DotsAndBoxes <br />
 <br />
 2.  Go into the directory of the project<br />
 cd DotsAndBoxes<br />
