@@ -1,11 +1,9 @@
-output.o: DrawBoard.cpp
-	g++ -pedantic-errors -std=c++11 -c $<
+DrawBoard.o: DrawBoard.cpp DrawBoard.h
+	g++ -c DrawBoard.cpp
 	
-main.o: main.cpp
+main.o: main.cpp DrawBoard.h
 	g++ -c main.cpp
 	
-Game:main.o output.o
-	g++ -pedantic-errors -std=c++11 -o $@
+main: main.o DrawBoard.o
+	g++ -pedantic-errors -std=c++11 main.o DrawBoard.o -o main
 	
-clean:
-	 rm - f .*o
