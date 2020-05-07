@@ -1,8 +1,8 @@
-**GROUP PROJECT<br />
-GROUP 127. <br />
-Team Members: <br />
+**GROUP PROJECT**<br />
+**GROUP 127.** <br />
+**Team Members:** <br />
 Pallavi Goel - 3035663148 <br />
-Aastha Goel - 3035662479 **<br />
+Aastha Goel - 3035662479 <br />
 
 Game Name: <br />
 **DOTS AND BOXES** <br />
