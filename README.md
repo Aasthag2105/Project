@@ -67,7 +67,8 @@ __Functions/Features we plan to implement:__<br />
 •	Form multiple files to implement different functions. In our case, we have created the file DrawBoard.cpp which will print the updated board after each player's move.<br />
 <br />
 <ins>Proper indentation and naming styles</ins><br />
-•   Proper indentation with naming styles for ease of understanding the code of the game. <br />
+•   Proper indentation with naming styles for ease of understanding the code of the game.
+•   Variables, files, and functions have been named based on their utility. This ensures better code readability and understanding. <br />
 <br />
 <ins>In-code documentation</ins><br />
 •	Comments have been included to describe the usage of every function. Further comments have been included where explanation is required.  <br />
