@@ -10,7 +10,6 @@ DOTS AND BOXES <br />
 Objective of the game: <br />
 To take more boxes than your opponent to win. <br />
 <br />
-<br />
 Basics of the game: <br />
 It is a 2-player game <br />
 •	Player 1 will be the user. <br />
@@ -21,7 +20,7 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 
     A   B   C   D   E   F    
 
-1   *   *   *   *   *   *
+1   * &nbsp  * &nbsp  * &nbsp  *  &nbsp * &nbsp  *
     
 2   *   *   *   *   *   *
 
