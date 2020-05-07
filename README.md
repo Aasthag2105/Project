@@ -18,7 +18,7 @@ It is a 2-player game <br />
 The players will be provided with a 6 by 6 grid, which will look something like this:
 
 
-    A    B   C    D    E   F    
+    A    B   C    D   E    F    
 
 1 &nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
     
