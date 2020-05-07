@@ -1,9 +1,13 @@
-DrawBoard.o: DrawBoard.cpp DrawBoard.h
-	g++ -c DrawBoard.cpp
-	
-main.o: main.cpp DrawBoard.h
-	g++ -c main.cpp
-	
-main: main.o DrawBoard.o
-	g++ -pedantic-errors -std=c++11 main.o DrawBoard.o -o main
-	
+DrawBoard.o: DrawBoard.cpp
+	g++ -pedantic-errors -std=c++11 -c $^
+
+main.o: main.cpp
+	g++ -c $^
+
+Game: main.o DrawBoard.o
+	g++ -pedantic-errors -std=c++11 $^ -o $@
+
+clean:
+	rm -f .*o
+
+.PHONY: clean
