@@ -18,6 +18,8 @@
 #include <stdlib.h>
 #include <algorithm>
 #include <time.h>
+#include "DrawBoard.h"
+
  
 using namespace std;
  
