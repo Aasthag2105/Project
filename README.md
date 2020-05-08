@@ -7,7 +7,6 @@ Aastha Goel - 3035662479 <br />
 Game Name: <br />
 **DOTS AND BOXES** <br />
 <br />
-
 **Objective of the game:** <br />
 To take more boxes than your opponent to win. <br />
 <br />
