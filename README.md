@@ -46,7 +46,7 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 9. The player with the most point wins the game.<br />
 <br />
 However, the user can end the game in between by typing "EXIT" in its turn. In that situation the player with the most points at that given time wins.<br />
-
+<br />
 **Problem Statement**<br />
 To make the maximum number of boxes and beat the computer.<br />
 <br />
@@ -79,7 +79,7 @@ To make the maximum number of boxes and beat the computer.<br />
 •	Comments have been included to describe the usage of every function. Further comments have been included where explanation is required.  <br />
 <br />
 <br />
-BUILD AND EXECUTE<br />
+**BUILD AND EXECUTE**<br />
 
 To use the system, simply follow the following steps:<br/>
 1.  Clone this repository using the following command on your command line interface: <br />
@@ -91,7 +91,7 @@ make Game<br />
 4.  Execute main:<br />
 ./Game<br />
 <br />
-3 SAMPLE USER INPUTS<br />
+**3 SAMPLE USER INPUTS**<br />
 C2 C3<br />
 E2 D2<br />
 EXIT<br />
