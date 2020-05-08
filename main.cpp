@@ -178,12 +178,14 @@ string checkboxmadelower(vector<string> line, string mt){
     string next4=mt[2]+s2;
     string nextsub1=mt[0]+sub;
     string nextsub2=mt[2]+sub;
+    //to check if box is made on the lower side
     for (int j=1; j<6; j++){
         if (l1==j && l2==j+1){
             if (std::find(line.begin(), line.end(), next1+next2) != line.end()){
                 if (std::find(line.begin(), line.end(), next3+next4) != line.end()){
                     if (std::find(line.begin(), line.end(), next2+next4) != line.end()){
                         flag1=mt;}}}}}
+    //Returning the values of the top most line of the box
     return flag1;
 }
  
@@ -207,12 +209,14 @@ string checkboxmadeupper(vector<string> line, string mt){
     string next4=mt[2]+s2;
     string nextsub1=mt[0]+sub;
     string nextsub2=mt[2]+sub;
+    //to check if box is made on the upper side
     for (int j=1;j<7;j++){
         if (l1==j && l2==j+1){
             if (std::find(line.begin(), line.end(), nextsub1+nextsub2) != line.end()){
                 if (std::find(line.begin(), line.end(), nextsub1+next1) != line.end()){
                     if (std::find(line.begin(), line.end(), nextsub2+next3) != line.end()){
                         flag2=nextsub1+nextsub2;}}}}}
+    //Returning the values of the top most line of the box
     return flag2;
 }
  
@@ -248,6 +252,7 @@ string checkboxmaderight(vector<string> line, string mt){
     string vnext2= nletter1+s2;
     string vnextsub1= nletter2+s1;
     string vnextsub2= nletter2+s2;
+    //to check if box is made on the right side
     for (int n=1; n<6;n++){
         if (l1==l2){
             if (i1==n && i2==n+1){
@@ -255,6 +260,7 @@ string checkboxmaderight(vector<string> line, string mt){
                     if (std::find(line.begin(), line.end(), vnext+vnext2) != line.end()){
                         if (std::find(line.begin(), line.end(), next4+vnext2) != line.end()){
                             flag3= next1+vnext;}}}}}}
+    //Returning the values of the top most line of the box
     return flag3;
 }
  
@@ -290,6 +296,7 @@ string checkboxmadeleft(vector<string> line, string mt){
     string vnext2= nletter1+s2;
     string vnextsub1= nletter2+s1;
     string vnextsub2= nletter2+s2;
+    //to check if box is made on the left side
     for (int n=1; n<7; n++){
         if (l1==l2){
             if (i1==n && i2==n+1){
@@ -302,9 +309,7 @@ string checkboxmadeleft(vector<string> line, string mt){
  
 }
  
- 
 
- 
  
 int main(){
 
