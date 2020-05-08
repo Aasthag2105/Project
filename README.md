@@ -87,4 +87,9 @@ cd DotsAndBoxes<br />
 make Game<br />
 4.  Execute main:<br />
 ./Game<br />
+<br />
+3 SAMPLE USER INPUTS<br />
+C2 C3<br />
+E2 D2<br />
+EXIT<br />
 
