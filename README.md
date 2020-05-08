@@ -7,6 +7,7 @@ Aastha Goel - 3035662479 <br />
 Game Name: <br />
 **DOTS AND BOXES** <br />
 <br />
+
 **Objective of the game:** <br />
 To take more boxes than your opponent to win. <br />
 <br />
@@ -46,8 +47,10 @@ The players will be provided with a 6 by 6 grid, which will look something like 
 <br />
 However, the user can end the game in between by typing "EXIT" in its turn. In that situation the player with the most points at that given time wins.<br />
 
+**Problem Statement**<br />
+To make the maximum number of boxes and beat the computer.<br />
 <br />
-FUNCTIONS AND FEATURES WE PLAN TO IMPLEMENT:<br />
+**FUNCTIONS AND FEATURES WE PLAN TO IMPLEMENT:**<br />
 <br />
 <ins>Generation of random game sets or events</ins><br />
 •	The computer will generate its move using the random function.<br />
