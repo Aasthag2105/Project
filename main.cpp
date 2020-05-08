@@ -310,7 +310,9 @@ int main(){
 
     cout<<"\nWELCOME TO DOTS AND BOXES\n"<<endl;
     cout<<"Rules of the game:"<<endl;
-    cout<< "The user has to input the two points.\nEach point should start with a capital letter between A and F, followed by a number between 1 and 6.\nBoth the points should be separated by a space.\nNo other format would be recognized by the system. "<< endl;
+    cout<<"1. The objective of the game is to create maximum number of boxes.\n2. The two players in the game are the user and the computer.\n3. The first turn is always played by the user.\n";
+    cout<< "4. The user has to input the two points.\nEach point should start with a capital letter between A and F, followed by a number between 1 and 6.\n5. Both the points should be separated by a space. \n6. The two points should be adjacent to each other. Eg: A1 A2\n7. No other format would be recognized by the system. "<< endl;
+    cout<<endl;
     cout<<"To stop the game in the middle, type 'EXIT' during User’s Move.\n\n\n"<<endl;
     int tot=0,up=0,cp=0,turn=0,valid1, valid2,top=0,ct=0,x;
 /* tot= sum of user’s score and computer’s score
