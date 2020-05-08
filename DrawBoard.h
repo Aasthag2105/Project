@@ -2,9 +2,7 @@
 //  DrawBoard.h
 //  Game
 //
-//  Created by Pallavi Goel on 06/05/2020.
-//  Copyright © 2020 Pallavi Goel. All rights reserved.
-//
+
 
 #ifndef DrawBoard_h
 #define DrawBoard_h
